@@ -17,7 +17,14 @@ import {
     Breadcrumb,
     Card,
     Row,
-    Col
+    Col,
+    Table,
+    TableColumn,
+    Switch,
+    Tooltip,
+    Pagination,
+    Dialog,
+    MessageBox
 } from 'element-ui'
 
 Vue.use(Button)
@@ -37,5 +44,13 @@ Vue.use(Breadcrumb)
 Vue.use(Card)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Switch)
+Vue.use(Tooltip)
+Vue.use(Pagination)
+Vue.use(Dialog)
     // eslint-disable-next-line eol-last
 Vue.prototype.$message = Message
+    // eslint-disable-next-line eol-last
+Vue.prototype.$confirm = MessageBox.confirm
