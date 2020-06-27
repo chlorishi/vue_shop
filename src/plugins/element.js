@@ -35,6 +35,9 @@ import {
     TabPane,
     Steps,
     Step,
+    Checkbox,
+    CheckboxGroup,
+    Upload
 } from 'element-ui'
 
 Vue.use(Button)
@@ -70,6 +73,9 @@ Vue.use(Tabs)
 Vue.use(TabPane)
 Vue.use(Steps)
 Vue.use(Step)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Upload)
     // eslint-disable-next-line eol-last
 Vue.prototype.$message = Message
     // eslint-disable-next-line eol-last
