@@ -1,7 +1,12 @@
 module.exports = {
+
+    publicPath: process.env.NODE_ENV === 'production' ? ' http://wxy0619.gitee.io/vue_shop/dist/' : '/',
+
     chainWebpack: config => {
             //发布模式
+            // eslint-disable-next-line padded-blocks
             config.when(process.env.NODE_ENV === 'production', config => {
+
                     //entry找到默认的打包入口，调用clear则是删除默认的打包入口
                     //add添加新的打包入口
                     config.entry('app').clear().add('./src/main-prod.js')
