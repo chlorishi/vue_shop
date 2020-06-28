@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === "development" ? "" : "/vue_shop/",
     chainWebpack: config => {
             //发布模式
             config.when(process.env.NODE_ENV === 'production', config => {
