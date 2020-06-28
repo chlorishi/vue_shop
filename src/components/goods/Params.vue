@@ -258,7 +258,6 @@ export default {
         item.inputVisible = false
         item.inputValue = ''
       })
-      console.log(res.data)
 
       if (this.activeName === 'many') {
         this.manyTableData = res.data

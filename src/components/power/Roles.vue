@@ -169,8 +169,6 @@ export default {
         return this.$message.error('获取权限列表失败')
       }
       this.rightslist = res.data
-      console.log(role)
-
       this.getLeafKeys(role, this.defKeys)
       this.dialogVisible = true
     },

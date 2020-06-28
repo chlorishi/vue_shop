@@ -255,12 +255,10 @@ export default {
       this.total = res.data.total
     },
     handleSizeChange(val) {
-      console.log(`每页 ${val} 条`)
       this.queryInfo.pagesize = val
       this.getUserList()
     },
     handleCurrentChange(val) {
-      console.log(`当前页: ${val}`)
       this.queryInfo.pagenum = val
       this.getUserList()
     },

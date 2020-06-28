@@ -78,7 +78,6 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('获取商品列表失败')
       }
-      console.log(res.data)
       this.goodsTableList = res.data.goods
       this.total = res.data.total
     },
@@ -114,7 +113,7 @@ export default {
     },
     //跳转到添加商品页面
     goAddpage() {
-        this.$router.push('/goods/add')
+      this.$router.push('/goods/add')
     }
   }
 }
