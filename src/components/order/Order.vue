@@ -81,7 +81,16 @@
       :visible.sync="kuaidiDialogVisible"
       width="50%"
       @close="kuaidiDialogClosed"
-    ></el-dialog>
+    >
+      <!-- 时间线 -->
+      <el-timeline>
+        <el-timeline-item
+          v-for="(activity, index) in kuaidiInfo"
+          :key="index"
+          :timestamp="activity.time"
+        >{{activity.context}}</el-timeline-item>
+      </el-timeline>
+    </el-dialog>
   </div>
 </template>
 <script>
@@ -155,6 +164,8 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@import '../../plugins/timeline/timeline.css';
+@import '../../plugins/timeline-item/timeline-item.css';
 .el-cascader {
   width: 100%;
 }
