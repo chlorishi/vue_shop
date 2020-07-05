@@ -14,7 +14,7 @@ import Nprogress from 'nprogress'
 
 Vue.use(VueQuillEditor, /* { default global options } */ )
     //配置请求根路径
-axios.defaults.baseURL = "http://timemeetyou.com:8889/api/private/v1/"
+axios.defaults.baseURL = "http://39.96.84.83:9999/api/private/v1"
     //请求拦截器
 axios.interceptors.request.use(config => {
     config.headers.Authorization = window.sessionStorage.getItem('token');
